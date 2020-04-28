@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard World OG";
+}
+
+<div class="content">
+     <div class="container-fluid">
+         <div class="row">          
+             <div class="col-lg-12">
+                 Filter By Year:
+
+                 <input type="text" value="" data-slider-min="1900"
+                        data-slider-max="2016" data-slider-step="1"
+                        data-slider-value="[2000,2016]" data-slider-tooltip="show"
+                        data-slider-handle="round" id="sld" style="width:100%">
+
+             </div>
+         </div>
+
+         <div class="row">
+             <h2>Oil reserves</h2>
+             <div class="col-md-3">
+                 <h4>Reserves by region</h4>
+                 <div id="pieChart_Reserves"><div class="loading_chart"></div></div>
+             </div>
+             <div class="col-md-5" >
+                 <h4>Reserves by countrys</h4>
+                 <div id="barChart_Reserves" ><div class="loading_chart"></div></div>
+             </div>
+             <div class="col-md-4" >
+                 <h4>Trend by country</h4>
+                 <div id="lineChart_Reserves"><div class="loading_chart"></div></div>
+             </div>
+         </div>
+
+
+         <div class="row">
+             <h2>Oil production</h2>
+             <div class="col-md-3">
+                 <h4>Production by region</h4>
+                 <div id="pieChart_Production"><div class="loading_chart"></div></div>
+             </div>
+             <div class="col-md-5">
+                 <h4>Production by countrys</h4>
+                 <div id="barChart_Production"><div class="loading_chart"></div></div>
+             </div>
+             <div class="col-md-4">
+                 <h4>Trend by country</h4>
+                 <div id="lineChart_Production"><div class="loading_chart"></div></div>
+             </div>
+         </div>
+
+         <div class="row">
+             <h2>Oil consumption</h2>
+             <div class="col-md-3">
+                 <h4>Consumption by region</h4>
+                 <div id="pieChart_Consumption"><div class="loading_chart"></div></div>
+             </div>
+             <div class="col-md-5">
+                 <h4>Consumption by countrys</h4>
+                 <div id="barChart_Consumption"><div class="loading_chart"></div></div>
+             </div>
+             <div class="col-md-4">
+                 <h4>Trend by country</h4>
+                 <div id="lineChart_Consumption"><div class="loading_chart"></div></div>
+             </div>
+         </div>
+
+
+     </div>
+
+</div>
+
+@section scripts
+{
+     
+    <script src="http://d3js.org/d3.v3.js"></script>   
+    <script type="text/javascript" src="@Url.Content("/js/lineChart.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/js/barChart.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/js/pieChart.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/js/DashboardBuilder.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/js/DashboardManagment.js")"></script>
+
+}

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorldRPCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="getDataFromConsume" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getDataFromConsumeCountry" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+    <Parameter Name="Country" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="getDataFromConsumeRegion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+    <Parameter Name="Region" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="getDataFromProduction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getDataFromProductionCountry" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+    <Parameter Name="Country" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="getDataFromProductionRegion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+    <Parameter Name="Region" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="getDataFromReserves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getDataFromReservesCountry" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+    <Parameter Name="Country" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="getDataFromReservesRegion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="YearFrom" Type="int" Mode="In" />
+    <Parameter Name="YearTo" Type="int" Mode="In" />
+    <Parameter Name="Region" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="WorldRPCModelStoreContainer" />
+</Schema>

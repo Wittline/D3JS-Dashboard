@@ -1,0 +1,58 @@
+﻿
+.loading_chart {
+
+    width:60px;
+    height:50px;
+    margin:0 auto;
+    position:relative;
+    background: url(/img/loading.gif) center no-repeat transparent;
+}
+
+
+.legend {
+
+    fill:white;
+    font-size:12px;
+}
+
+.slice {
+    fill:white;
+    font-size:11px;
+}
+
+
+.tick {
+    font-size:11px;
+    fill:white;
+}
+
+.axis path, .axis line {
+
+    fill:none;
+    stroke:white;
+    shape-rendering:crispEdges;
+}
+
+.xlabel, ylabel {
+
+    font-weight:bold;
+    font-size:10px;
+}
+
+
+.axis text {
+
+
+}
+
+.title {
+
+}
+
+.xAxis {
+
+}  
+
+.yAxis {
+ 
+}

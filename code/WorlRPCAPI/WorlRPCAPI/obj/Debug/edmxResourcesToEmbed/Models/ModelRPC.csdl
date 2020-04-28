@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorldRPCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WorldRPCEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="getDataFromConsume" ReturnType="Collection(WorldRPCModel.getDataFromConsume_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromConsumeCountry" ReturnType="Collection(WorldRPCModel.getDataFromConsumeCountry_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromConsumeRegion" ReturnType="Collection(WorldRPCModel.getDataFromConsumeRegion_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+      <Parameter Name="Region" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromProduction" ReturnType="Collection(WorldRPCModel.getDataFromProduction_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromProductionCountry" ReturnType="Collection(WorldRPCModel.getDataFromProductionCountry_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromProductionRegion" ReturnType="Collection(WorldRPCModel.getDataFromProductionRegion_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+      <Parameter Name="Region" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromReserves" ReturnType="Collection(WorldRPCModel.getDataFromReserves_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromReservesCountry" ReturnType="Collection(WorldRPCModel.getDataFromReservesCountry_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="getDataFromReservesRegion" ReturnType="Collection(WorldRPCModel.getDataFromReservesRegion_Result)">
+      <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+      <Parameter Name="YearTo" Mode="In" Type="Int32" />
+      <Parameter Name="Region" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="getDataFromConsume_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="Double" Name="Porcentaje" Nullable="true" />
+    <Property Type="String" Name="Región" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="getDataFromConsumeCountry_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="String" Name="País" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="Año" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="getDataFromConsumeRegion_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="String" Name="Pais" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="getDataFromProduction_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="Double" Name="Porcentaje" Nullable="true" />
+    <Property Type="String" Name="Región" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="getDataFromProductionCountry_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="String" Name="País" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="Año" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="getDataFromProductionRegion_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="String" Name="Pais" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="getDataFromReserves_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="Double" Name="Porcentaje" Nullable="true" />
+    <Property Type="String" Name="Región" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="getDataFromReservesCountry_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="String" Name="País" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="Año" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="getDataFromReservesRegion_Result">
+    <Property Type="Double" Name="Barriles" Nullable="true" />
+    <Property Type="String" Name="Pais" Nullable="false" MaxLength="30" />
+  </ComplexType>
+</Schema>

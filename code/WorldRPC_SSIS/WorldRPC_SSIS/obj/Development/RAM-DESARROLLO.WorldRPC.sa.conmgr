@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="RAM-DESARROLLO.WorldRPC.sa"
+  DTS:DTSID="{5FAEF68A-4752-47C8-B2BA-8302A819830E}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=RAM-DESARROLLO;User ID=sa;Initial Catalog=WorldRPC;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdFhELmrZT02to6enmzthCgAAAAACAAAAAAAQZgAAAAEAACAAAACE04FP5AyKFtdxa69Mk1EJ9FcZiqXjGjTd2K+D0BBcCgAAAAAOgAAAAAIAACAAAAAutGtuhGkbjM0gHDKcHAq0/W1ZWh91KfzNj11/+DcOoIAAAACf3GDs8pTDQDCPf3lHYZUsUoj+OuTxBp7No9mrmA4XGdWnzti2ImhXIfxd+lQW8HyTiIYeN4SzT8Vseze6TmARzw1ShNX9egFX6TD3neR9VYrn/XDlXOwe2k1zgZegw7RLLsOyvHtT5EcpLy2IjOA2jFWXbUcq2cWFu4+Ak+x9AUAAAADAzmQfj1+o2mCvC26TcK/8G80anE3b2qGoCo/7bIvkqZue42KpJuylC1MXXYgwn4O59dskw1PC5ejCNCuysmsp</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

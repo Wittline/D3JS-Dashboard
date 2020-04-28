@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="WorldRPCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="getDataFromConsume" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getDataFromConsumeCountry" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+          <Parameter Name="Country" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="getDataFromConsumeRegion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+          <Parameter Name="Region" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="getDataFromProduction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getDataFromProductionCountry" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+          <Parameter Name="Country" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="getDataFromProductionRegion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+          <Parameter Name="Region" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="getDataFromReserves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getDataFromReservesCountry" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+          <Parameter Name="Country" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="getDataFromReservesRegion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="YearFrom" Type="int" Mode="In" />
+          <Parameter Name="YearTo" Type="int" Mode="In" />
+          <Parameter Name="Region" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="WorldRPCModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WorldRPCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="WorldRPCEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="getDataFromConsume" ReturnType="Collection(WorldRPCModel.getDataFromConsume_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromConsumeCountry" ReturnType="Collection(WorldRPCModel.getDataFromConsumeCountry_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+            <Parameter Name="Country" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromConsumeRegion" ReturnType="Collection(WorldRPCModel.getDataFromConsumeRegion_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+            <Parameter Name="Region" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromProduction" ReturnType="Collection(WorldRPCModel.getDataFromProduction_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromProductionCountry" ReturnType="Collection(WorldRPCModel.getDataFromProductionCountry_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+            <Parameter Name="Country" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromProductionRegion" ReturnType="Collection(WorldRPCModel.getDataFromProductionRegion_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+            <Parameter Name="Region" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromReserves" ReturnType="Collection(WorldRPCModel.getDataFromReserves_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromReservesCountry" ReturnType="Collection(WorldRPCModel.getDataFromReservesCountry_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+            <Parameter Name="Country" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="getDataFromReservesRegion" ReturnType="Collection(WorldRPCModel.getDataFromReservesRegion_Result)">
+            <Parameter Name="YearFrom" Mode="In" Type="Int32" />
+            <Parameter Name="YearTo" Mode="In" Type="Int32" />
+            <Parameter Name="Region" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="getDataFromConsume_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="Double" Name="Porcentaje" Nullable="true" />
+          <Property Type="String" Name="Región" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="getDataFromConsumeCountry_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="String" Name="País" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="Año" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="getDataFromConsumeRegion_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="String" Name="Pais" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="getDataFromProduction_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="Double" Name="Porcentaje" Nullable="true" />
+          <Property Type="String" Name="Región" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="getDataFromProductionCountry_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="String" Name="País" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="Año" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="getDataFromProductionRegion_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="String" Name="Pais" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="getDataFromReserves_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="Double" Name="Porcentaje" Nullable="true" />
+          <Property Type="String" Name="Región" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="getDataFromReservesCountry_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="String" Name="País" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="Año" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="getDataFromReservesRegion_Result">
+          <Property Type="Double" Name="Barriles" Nullable="true" />
+          <Property Type="String" Name="Pais" Nullable="false" MaxLength="30" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WorldRPCModelStoreContainer" CdmEntityContainer="WorldRPCEntities" >
+          <FunctionImportMapping FunctionImportName="getDataFromConsume" FunctionName="WorldRPCModel.Store.getDataFromConsume">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromConsume_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+                <ScalarProperty Name="Región" ColumnName="Región" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromConsumeCountry" FunctionName="WorldRPCModel.Store.getDataFromConsumeCountry">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromConsumeCountry_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="País" ColumnName="País" />
+                <ScalarProperty Name="Año" ColumnName="Año" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromConsumeRegion" FunctionName="WorldRPCModel.Store.getDataFromConsumeRegion">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromConsumeRegion_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="Pais" ColumnName="Pais" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromProduction" FunctionName="WorldRPCModel.Store.getDataFromProduction">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromProduction_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+                <ScalarProperty Name="Región" ColumnName="Región" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromProductionCountry" FunctionName="WorldRPCModel.Store.getDataFromProductionCountry">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromProductionCountry_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="País" ColumnName="País" />
+                <ScalarProperty Name="Año" ColumnName="Año" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromProductionRegion" FunctionName="WorldRPCModel.Store.getDataFromProductionRegion">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromProductionRegion_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="Pais" ColumnName="Pais" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromReserves" FunctionName="WorldRPCModel.Store.getDataFromReserves">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromReserves_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+                <ScalarProperty Name="Región" ColumnName="Región" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromReservesCountry" FunctionName="WorldRPCModel.Store.getDataFromReservesCountry">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromReservesCountry_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="País" ColumnName="País" />
+                <ScalarProperty Name="Año" ColumnName="Año" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDataFromReservesRegion" FunctionName="WorldRPCModel.Store.getDataFromReservesRegion">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromReservesRegion_Result">
+                <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+                <ScalarProperty Name="Pais" ColumnName="Pais" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WorldRPCModelStoreContainer" CdmEntityContainer="WorldRPCEntities">
+    <FunctionImportMapping FunctionImportName="getDataFromConsume" FunctionName="WorldRPCModel.Store.getDataFromConsume">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromConsume_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+          <ScalarProperty Name="Región" ColumnName="Región" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromConsumeCountry" FunctionName="WorldRPCModel.Store.getDataFromConsumeCountry">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromConsumeCountry_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="País" ColumnName="País" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromConsumeRegion" FunctionName="WorldRPCModel.Store.getDataFromConsumeRegion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromConsumeRegion_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromProduction" FunctionName="WorldRPCModel.Store.getDataFromProduction">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromProduction_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+          <ScalarProperty Name="Región" ColumnName="Región" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromProductionCountry" FunctionName="WorldRPCModel.Store.getDataFromProductionCountry">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromProductionCountry_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="País" ColumnName="País" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromProductionRegion" FunctionName="WorldRPCModel.Store.getDataFromProductionRegion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromProductionRegion_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromReserves" FunctionName="WorldRPCModel.Store.getDataFromReserves">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromReserves_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="Porcentaje" ColumnName="Porcentaje" />
+          <ScalarProperty Name="Región" ColumnName="Región" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromReservesCountry" FunctionName="WorldRPCModel.Store.getDataFromReservesCountry">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromReservesCountry_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="País" ColumnName="País" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDataFromReservesRegion" FunctionName="WorldRPCModel.Store.getDataFromReservesRegion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WorldRPCModel.getDataFromReservesRegion_Result">
+          <ScalarProperty Name="Barriles" ColumnName="Barriles" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

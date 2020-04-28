@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "WorldRPC_SSIS", "WorldRPC_SSIS\WorldRPC_SSIS.dtproj", "{CFDC8347-6D99-4A2E-879C-E16C8A862C3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFDC8347-6D99-4A2E-879C-E16C8A862C3E}.Development|Default.ActiveCfg = Development
+		{CFDC8347-6D99-4A2E-879C-E16C8A862C3E}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
