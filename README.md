@@ -1,2 +1,2 @@
-# D3_Dashboard
-Responsive DashBoard D3.js (SQL SERVER - SSIS - API REST - ASP.NET MVC - D3.js)
+# Building Responsive DashBoard with D3.js and ASP.NET MVC (SQL SERVER - SSIS - API REST)
+Building Responsive DashBoard with D3.js and ASP.NET MVC (SQL SERVER - SSIS - API REST)
