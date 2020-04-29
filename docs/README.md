@@ -1,8 +1,9 @@
 # Building Responsive DashBoard with D3.js and ASP.NET MVC from scratch (SQL SERVER - SSIS - API REST)
 This project explains the creation of an interactive and responsive dashboard for any device, its development was separated into several stages and each of them is explained below:
 
-<a href="https://youtu.be/z0aLLAW52oA" target="_blank"><img src="https://wittline.github.io/D3JS-Dashboard/images/miniatura.PNG" 
-alt="Building Responsive DashBoard with D3.js and ASP.NET MVC from scratch (SQL SERVER - SSIS - API REST)" width="240" height="180" border="10" /></a>
+[![Alt text](https://wittline.github.io/D3JS-Dashboard/images/miniatura.PNG)](https://www.youtube.com/watch?v=z0aLLAW52oA)
+
+![alt text](https://wittline.github.io/D3JS-Dashboard/images/miniatura.PNG)
 
 ## * **Designing a data model**
 The data model was created using a SQLSERVER database, There are three fact tables Fact_produccion, Fact_reservas and Fact_consumo sharing the same dimension "tiempo" and "paises" this data warehouse schema architecture is also called galaxy or Constellation. The database was not included in this repository, you can create it by following the steps on the youtube video from minute **1:55** to minute **5:00**
