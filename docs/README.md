@@ -4,12 +4,12 @@ This project explains the creation of an interactive and responsive dashboard fo
 <a href="https://youtu.be/z0aLLAW52oA" target="_blank"><img src="https://wittline.github.io/D3JS-Dashboard/images/miniatura.PNG" 
 alt="Building Responsive DashBoard with D3.js and ASP.NET MVC from scratch (SQL SERVER - SSIS - API REST)" width="240" height="180" border="10" /></a>
 
-### * **Designing a data model**
+## * **Designing a data model**
 The data model was created using a SQLSERVER database, There are three fact tables Fact_produccion, Fact_reservas and Fact_consumo sharing the same dimension "tiempo" and "paises" this data warehouse schema architecture is also called galaxy or Constellation. The database was not included in this repository, you can create it by following the steps on the youtube video from minute **1:55** to minute **5:00**
 
 ![alt text](https://wittline.github.io/D3JS-Dashboard/images/dwh.PNG)
 
-### * **Designing and creating an ETL process**
+## * **Designing and creating an ETL process**
 
 ![alt text](https://wittline.github.io/D3JS-Dashboard/images/ETL.PNG)
 
@@ -17,7 +17,7 @@ The goal of this stage is to build a ETL process that reads the .csv files and l
 
 ![alt text](https://wittline.github.io/D3JS-Dashboard/images/sp.PNG)
 
-### * **Creating the API-REST with ASP.NET MVC API**
+## * **Creating the API-REST with ASP.NET MVC API**
 
 ![alt text](https://wittline.github.io/D3JS-Dashboard/images/com.PNG)
 
@@ -27,7 +27,7 @@ The goal of this stage is to highlight that all the calls coming from the dashbo
 
 ![alt text](https://wittline.github.io/D3JS-Dashboard/images/apis.PNG)
 
-### * **Creating the interactive Dashboard with ASP.NET MVC**
+## * **Creating the interactive Dashboard with ASP.NET MVC**
 
 **The ASP.NET Web MVC project was added to this repository**, the steps taken in its development can be seen in the youtube video from minute **25:20** to minute **44:15**, this represents the last phase of the project. In the development of this, a group of .js files are created that are responsible for orchestrating all the events cming from the filters and communicating the responses from the requests made to the API-REST, providing the data to the D3.js framework.
 
