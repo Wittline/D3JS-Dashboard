@@ -23,7 +23,6 @@ The goal of this stage is to build a ETL process that reads the .csv files and l
 
 ![alt text](https://wittline.github.io/D3JS-Dashboard/images/mvc.PNG)
 
-
 The goal of this stage is to highlight that all the calls coming from the dashboard are through the filters, and each event on these filters makes a request to a REST API. in this way, the back-end code is separated from the front-end. **The API code was added to this repository** and you can see how it was developed in the youtube video from the minute **19:00** to the minute **25:15**
 
 ![alt text](https://wittline.github.io/D3JS-Dashboard/images/apis.PNG)
