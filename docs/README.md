@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 # Building Responsive DashBoard with D3.js and ASP.NET MVC from scratch (SQL SERVER - SSIS - API REST)
 This project explains the creation of an interactive and responsive dashboard for any device, its development was separated into several stages and each of them is explained below:
 
